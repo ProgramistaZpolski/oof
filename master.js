@@ -3,7 +3,7 @@
  * @license MIT
  */
 "use strict";
-window.onerror = (b, i, g, o, O, f) => {
+onerror = (b, i, g, o, O, f) => {
 	f = O.stack;
 	O = window._oof || "/error.php";
 	fetch(`${O}?a=${b}&b=${i}&c=${g}&d=${o}&e=${f}`);
